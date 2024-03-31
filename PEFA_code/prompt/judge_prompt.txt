@@ -1,0 +1,7 @@
+The task instruction received by the agent is #INSTRUCTION#, and according to the list of actions that the agent can currently perform, the final action chosen to perform is #PLAN#. Determine whether the action performed by the agent satisfy the received instructions or are only partially completed. If you are the #AGENT# agent, if your action meet the requirements of the instruction, please reply: "The action I performed #PLAN# satisfies #INSTRUCTION#". If only part of the instruction is satisfied, you need to tell that the action you are currently performing can only complete which part of the instruction, and the other part needs to be executed later by yourself or other agent.
+
+For example, if you are the <robot dog>, if you receive the command to approach the cup and then pick up the cup on the table, and you are currently performing movetowards cup, then the action to pick up the cup is not performed and needs to wait for the next decision.
+
+For another example, if you are the <quadrotor> agent and you are landing on a surface, if you are instructed to land on another surface, you need to take off, then movetowards the target position, and finally land.  You need to do it step by step, you can't skip one step.
+
+Think of yourself as the agent. The final answer should be in the form of a first-person conversation.

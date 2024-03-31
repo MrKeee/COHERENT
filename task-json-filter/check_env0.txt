@@ -1,0 +1,372 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Fix~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<bedroom>(0). 
+<bedroom floor>(1). Its properties are: SURFACES, LANDABLE, LOW_HEIGHT. 
+<childroom>(2). 
+<childroom floor>(3). Its properties are: SURFACES, LANDABLE, LOW_HEIGHT. 
+<livingroom>(4). 
+<livingroom floor>(5). Its properties are: SURFACES, LANDABLE, LOW_HEIGHT. 
+<kitchen>(6). 
+<kitchen floor>(7). Its properties are: SURFACES, LANDABLE, LOW_HEIGHT. 
+<door>(8). Its properties are: CAN_OPEN. Now its state is: CLOSED.
+<door>(9). Its properties are: CAN_OPEN. Now its state is: OPEN_FOREVER.
+<door>(10). Now its state is: OPEN_FOREVER.
+<sofa>(11). Its properties are: SURFACES, LOW_HEIGHT. 
+<coffee table>(12). Its properties are: SURFACES, LOW_HEIGHT. 
+<dining table>(13). Its properties are: SURFACES, HIGH_HEIGHT, LANDABLE. 
+<fridge>(14). Its properties are: CAN_OPEN, HAS_SWITCH, CONTAINERS, HAS_PLUG. Now its state is: CLOSED.
+<quadrotor>(22). Its properties are: MOVABLE, FLYABLE, HAVE_A_BASKET. Now its state is: LAND.
+<robot dog>(23). Its properties are: MOVABLE. 
+<robot arm>(24). Its properties are: ON_HIGH_SURFACE. 
+<basket>(25). Its properties are: MOVABLE, CONTAINERS, WITH_QUADROTOR. Now its state is: OPEN_FOREVER.
+<bed>(27). Its properties are: SURFACES, LOW_HEIGHT. 
+<bed>(28). Its properties are: SURFACES, LOW_HEIGHT. 
+<kitchen table>(32). Its properties are: SURFACES, LOW_HEIGHT. 
+<high table>(33). Its properties are: SURFACES, HIGH_HEIGHT, LANDABLE. 
+<cabinet>(34). Its properties are: CONTAINERS, CAN_OPEN, LOW_HEIGHT, SURFACES. Now its state is: CLOSED.
+<high kitchen table>(35). Its properties are: SURFACES, HIGH_HEIGHT, LANDABLE. 
+<robot arm>(50). Its properties are: ON_HIGH_SURFACE. 
+The <bedroom floor>(1) is INSIDE the <bedroom>(0). 
+The <childroom floor>(3) is INSIDE the <childroom>(2). 
+The <livingroom floor>(5) is INSIDE the <livingroom>(4). 
+The <kitchen floor>(7) is INSIDE the <kitchen>(6). 
+The <door>(8) is LEADING TO the <bedroom>(0). 
+The <door>(8) is LEADING TO the <livingroom>(4). 
+The <door>(9) is LEADING TO the <childroom>(2). 
+The <door>(9) is LEADING TO the <livingroom>(4). 
+The <door>(10) is LEADING TO the <livingroom>(4). 
+The <door>(10) is LEADING TO the <kitchen>(6). 
+The <sofa>(11) is ON the <livingroom floor>(5). 
+The <coffee table>(12) is ON the <livingroom floor>(5). 
+The <dining table>(13) is ON the <livingroom floor>(5). 
+The <fridge>(14) is ON the <kitchen floor>(7). 
+The <robot arm>(24) is ON the <dining table>(13). 
+The <robot arm>(24) is INSIDE the <livingroom>(4). 
+The <bed>(27) is ON the <bedroom floor>(1). 
+The <bed>(28) is ON the <childroom floor>(3). 
+The <kitchen table>(32) is ON the <kitchen floor>(7). 
+The <high table>(33) is ON the <bedroom floor>(1). 
+The <cabinet>(34) is ON the <childroom floor>(3). 
+The <high kitchen table>(35) is ON the <kitchen floor>(7). 
+The <robot arm>(50) is ON the <high table>(33). 
+The <robot arm>(50) is INSIDE the <bedroom>(0). 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+task_id: 0
+{'on_<quadrotor>(22)_<high kitchen table>(35)': [1, []]}
+['The <quadrotor>(22) lands on the <high kitchen table>(35).']
+[5]
+*******************************Agent********************************************
+I am <quadrotor>(22). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET. Now my state is: LAND. 
+I am ON the <childroom floor>(3). I am INSIDE the <childroom>(2). I am WITH the <basket>(25). 
+The <basket>(25) is with quadrotor LAND ON the <childroom floor>(3).
+I am <robot dog>(23). Now my properties are: MOVABLE. 
+I am ON the <kitchen floor>(7). I am INSIDE the <kitchen>(6). 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<bread>(26). Its properties are: GRABABLE, MOVABLE, HEATABLE, ON_HIGH_SURFACE. Now its state is: HOT.
+<socks>(29). Its properties are: GRABABLE, MOVABLE. 
+<dinner napkin>(41). Its properties are: GRABABLE, MOVABLE. 
+<box>(52). Its properties are: CONTAINERS, MOVABLE, ON_HIGH_SURFACE. Now its state is: OPEN_FOREVER.
+<sunglasses>(55). Its properties are: GRABABLE, MOVABLE, ON_HIGH_SURFACE. 
+----------------------------------Edges------------------------------------------------
+The <basket>(25) is ON the <childroom floor>(3). 
+The <socks>(29) is ON the <sofa>(11). 
+The <dinner napkin>(41) is ON the <childroom floor>(3). 
+The <box>(52) is ON the <high table>(33). 
+The <sunglasses>(55) is ON the <dining table>(13). 
+
+
+
+task_id: 3
+{'inside_<silver coin>(48)_<box>(52)': [1, []], 'inside_<battery>(39)_<box>(52)': [1, []]}
+['Put the <silver coin>(48) and <battery>(39) into the <box>(52).']
+[4]
+*******************************Agent********************************************
+I am <quadrotor>(22). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET. Now my state is: LAND. 
+I am ON the <bedroom floor>(1). I am INSIDE the <bedroom>(0). I am WITH the <basket>(25). 
+The <basket>(25) is with quadrotor LAND ON the <bedroom floor>(1).
+I am <robot dog>(23). Now my properties are: MOVABLE. 
+I am ON the <livingroom floor>(5). I am INSIDE the <livingroom>(4). 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<cup>(19). Its properties are: GRABABLE, MOVABLE. Now its state is: EMPTY.
+<battery>(39). Its properties are: GRABABLE, MOVABLE, ON_HIGH_SURFACE. 
+<silver coin>(48). Its properties are: GRABABLE, MOVABLE, ON_HIGH_SURFACE. 
+<box>(52). Its properties are: CONTAINERS, MOVABLE, ON_HIGH_SURFACE. Now its state is: OPEN_FOREVER.
+<knife>(54). Its properties are: GRABABLE, MOVABLE. 
+----------------------------------Edges------------------------------------------------
+The <cup>(19) is INSIDE the <fridge>(14). 
+The <basket>(25) is ON the <bedroom floor>(1). 
+The <battery>(39) is ON the <high table>(33). 
+The <silver coin>(48) is ON the <high table>(33). 
+The <box>(52) is ON the <high table>(33). 
+The <knife>(54) is ON the <coffee table>(12). 
+
+
+task_id: 5
+{'inside_<apple>(17)_<plate>(53)': [1, []], 'inside_<plate>(53)_<fridge>(14)': [1, []]}
+['Put the <apple>(17) into the <plate>(53) which is in the <fridge>(14). The <plate>(53) is in the <fridge>(14) which is in the <kitchen>(6).']
+[6]
+*******************************Agent********************************************
+I am <quadrotor>(22). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET. Now my state is: LAND. 
+I am ON the <bedroom floor>(1). I am INSIDE the <bedroom>(0). I am WITH the <basket>(25). 
+The <basket>(25) is with quadrotor LAND ON the <bedroom floor>(1).
+I am <robot dog>(23). Now my properties are: MOVABLE. 
+I am ON the <kitchen floor>(7). I am INSIDE the <kitchen>(6). 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<apple>(17). Its properties are: GRABABLE, MOVABLE. 
+<hat>(20). Its properties are: GRABABLE, MOVABLE. 
+<bag of chips>(37). Its properties are: GRABABLE, MOVABLE. 
+<plate>(53). Its properties are: GRABABLE, MOVABLE, CONTAINERS. Now its state is: OPEN_FOREVER.
+<knife>(54). Its properties are: GRABABLE, MOVABLE. 
+----------------------------------Edges------------------------------------------------
+The <apple>(17) is ON the <kitchen table>(32). 
+The <hat>(20) is ON the <coffee table>(12). 
+The <basket>(25) is ON the <bedroom floor>(1). 
+The <bag of chips>(37) is ON the <kitchen floor>(7). 
+The <plate>(53) is INSIDE the <fridge>(14). 
+The <knife>(54) is ON the <coffee table>(12). 
+
+task_id: 6
+{'on_<hat>(20)_<bed>(27)': [1, []]}
+['Put the <hat>(20) on the <bed>(27).']
+[7]
+*******************************Agent********************************************
+I am <quadrotor>(22). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET. Now my state is: LAND. 
+I am ON the <bedroom floor>(1). I am INSIDE the <bedroom>(0). I am WITH the <basket>(25). 
+The <basket>(25) is with quadrotor LAND ON the <bedroom floor>(1).
+I am <robot dog>(23). Now my properties are: MOVABLE. 
+I am ON the <livingroom floor>(5). I am INSIDE the <livingroom>(4). 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<microwave>(15). Its properties are: CAN_OPEN, HAS_SWITCH, CONTAINERS, ON_HIGH_SURFACE. Now its state is: CLOSED, OFF.
+<hat>(20). Its properties are: GRABABLE, MOVABLE. 
+<battery>(39). Its properties are: GRABABLE, MOVABLE, ON_HIGH_SURFACE. 
+<dinner napkin>(41). Its properties are: GRABABLE, MOVABLE. 
+<orange>(49). Its properties are: GRABABLE, MOVABLE. 
+----------------------------------Edges------------------------------------------------
+The <microwave>(15) is ON the <dining table>(13). 
+The <hat>(20) is ON the <coffee table>(12). 
+The <basket>(25) is ON the <bedroom floor>(1). 
+The <battery>(39) is ON the <high table>(33). 
+The <dinner napkin>(41) is ON the <childroom floor>(3). 
+The <orange>(49) is ON the <bedroom floor>(1). 
+
+task_id: 7
+{'on_<notebook>(43)_<coffee table>(12)': [1, []]}
+['Put the <notebook>(43) on the <coffee table>(12).']
+[8]
+*******************************Agent********************************************
+I am <quadrotor>(22). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET. Now my state is: LAND. 
+I am ON the <bedroom floor>(1). I am INSIDE the <bedroom>(0). I am WITH the <basket>(25). 
+The <basket>(25) is with quadrotor LAND ON the <bedroom floor>(1).
+I am <robot dog>(23). Now my properties are: MOVABLE. 
+I am ON the <livingroom floor>(5). I am INSIDE the <livingroom>(4). 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<banana>(18). Its properties are: GRABABLE, MOVABLE. 
+<notebook>(43). Its properties are: GRABABLE, MOVABLE. 
+<orange>(49). Its properties are: GRABABLE, MOVABLE. 
+<plate>(51). Its properties are: GRABABLE, MOVABLE, ON_HIGH_SURFACE, CONTAINERS. Now its state is: OPEN_FOREVER.
+<sunglasses>(55). Its properties are: GRABABLE, MOVABLE, ON_HIGH_SURFACE. 
+----------------------------------Edges------------------------------------------------
+The <banana>(18) is INSIDE the <fridge>(14). 
+The <basket>(25) is ON the <bedroom floor>(1). 
+The <notebook>(43) is ON the <bed>(27). 
+The <orange>(49) is ON the <bedroom floor>(1). 
+The <plate>(51) is ON the <dining table>(13). 
+The <sunglasses>(55) is ON the <dining table>(13). 
+
+task_id: 8
+{'on_<socks>(29)_<bed>(28)': [1, []]}
+['Put the <socks>(29) on the <bed>(28).']
+[5]
+*******************************Agent********************************************
+I am <quadrotor>(22). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET. Now my state is: LAND. 
+I am ON the <childroom floor>(3). I am INSIDE the <childroom>(2). I am WITH the <basket>(25). 
+The <basket>(25) is with quadrotor LAND ON the <childroom floor>(3).
+I am <robot dog>(23). Now my properties are: MOVABLE. 
+I am ON the <livingroom floor>(5). I am INSIDE the <livingroom>(4). 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<socks>(29). Its properties are: GRABABLE, MOVABLE. 
+<socks>(31). Its properties are: GRABABLE, MOVABLE. 
+<notebook>(43). Its properties are: GRABABLE, MOVABLE. 
+<textbook>(44). Its properties are: GRABABLE, MOVABLE. 
+<toy box>(45). Its properties are: CONTAINERS. Now its state is: OPEN_FOREVER.
+----------------------------------Edges------------------------------------------------
+The <basket>(25) is ON the <childroom floor>(3). 
+The <socks>(29) is ON the <sofa>(11). 
+The <socks>(31) is ON the <sofa>(11). 
+The <notebook>(43) is ON the <bed>(27). 
+The <textbook>(44) is ON the <bed>(28). 
+The <toy box>(45) is ON the <childroom floor>(3). 
+
+
+
+
+task_id: 12
+{'inside_<bag of chips>(37)_<basket>(25)': [1, []], 'inside_<bag of tea>(38)_<basket>(25)': [1, []], 'on_<quadrotor>(22)_<high kitchen table>(35)': [1, []]}
+['The <quadrotor>(22) lands on the <high kitchen table>(35) with the <bag of chips>(37) and <bag of tea>(38) in the <basket>(25).']
+[12]
+*******************************Agent********************************************
+I am <quadrotor>(22). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET. Now my state is: LAND. 
+I am ON the <kitchen floor>(7). I am INSIDE the <kitchen>(6). I am WITH the <basket>(25). 
+The <basket>(25) is with quadrotor LAND ON the <kitchen floor>(7).
+I am <robot dog>(23). Now my properties are: MOVABLE. 
+I am ON the <livingroom floor>(5). I am INSIDE the <livingroom>(4). 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<hat>(20). Its properties are: GRABABLE, MOVABLE. 
+<socks>(29). Its properties are: GRABABLE, MOVABLE. 
+<bag of chips>(37). Its properties are: GRABABLE, MOVABLE. 
+<bag of tea>(38). Its properties are: GRABABLE, MOVABLE. 
+<box>(52). Its properties are: CONTAINERS, MOVABLE, ON_HIGH_SURFACE. Now its state is: OPEN_FOREVER.
+----------------------------------Edges------------------------------------------------
+The <hat>(20) is ON the <coffee table>(12). 
+The <basket>(25) is ON the <kitchen floor>(7). 
+The <socks>(29) is ON the <sofa>(11). 
+The <bag of chips>(37) is ON the <kitchen floor>(7). 
+The <bag of tea>(38) is ON the <kitchen floor>(7). 
+The <box>(52) is ON the <high table>(33). 
+
+task_id: 13
+{'inside_<knife>(54)_<basket>(25)': [1, []], 'on_<quadrotor>(22)_<high kitchen table>(35)': [1, []]}
+['The <quadrotor>(22) lands on the <high kitchen table>(35) with the <knife>(54) in the <basket>(25).']
+[9]
+*******************************Agent********************************************
+I am <quadrotor>(22). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET. Now my state is: LAND. 
+I am ON the <livingroom floor>(5). I am INSIDE the <livingroom>(4). I am WITH the <basket>(25). 
+The <basket>(25) is with quadrotor LAND ON the <livingroom floor>(5).
+I am <robot dog>(23). Now my properties are: MOVABLE. 
+I am ON the <kitchen floor>(7). I am INSIDE the <kitchen>(6). 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<cup>(19). Its properties are: GRABABLE, MOVABLE. Now its state is: EMPTY.
+<bread>(26). Its properties are: GRABABLE, MOVABLE, HEATABLE, ON_HIGH_SURFACE. Now its state is: HOT.
+<orange>(49). Its properties are: GRABABLE, MOVABLE. 
+<plate>(53). Its properties are: GRABABLE, MOVABLE, CONTAINERS. Now its state is: OPEN_FOREVER.
+<knife>(54). Its properties are: GRABABLE, MOVABLE. 
+----------------------------------Edges------------------------------------------------
+The <cup>(19) is INSIDE the <fridge>(14). 
+The <basket>(25) is ON the <livingroom floor>(5). 
+The <orange>(49) is ON the <bedroom floor>(1). 
+The <plate>(53) is INSIDE the <fridge>(14). 
+The <knife>(54) is ON the <coffee table>(12). 
+
+task_id: 14
+{'inside_<sunglasses>(55)_<cabinet>(34)': [1, []]}
+['Put the <sunglasses>(55) into the <cabinet>(34). The <cabinet>(34) is originally in the <childroom>(2).']
+[14]
+*******************************Agent********************************************
+I am <quadrotor>(22). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET. Now my state is: LAND. 
+I am ON the <livingroom floor>(5). I am INSIDE the <livingroom>(4). I am WITH the <basket>(25). 
+The <basket>(25) is with quadrotor LAND ON the <livingroom floor>(5).
+I am <robot dog>(23). Now my properties are: MOVABLE. 
+I am ON the <childroom floor>(3). I am INSIDE the <childroom>(2). 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<cup>(19). Its properties are: GRABABLE, MOVABLE. Now its state is: EMPTY.
+<bread>(26). Its properties are: GRABABLE, MOVABLE, HEATABLE, ON_HIGH_SURFACE. Now its state is: HOT.
+<toy box>(45). Its properties are: CONTAINERS. Now its state is: OPEN_FOREVER.
+<toy car>(46). Its properties are: GRABABLE, MOVABLE. 
+<sunglasses>(55). Its properties are: GRABABLE, MOVABLE, ON_HIGH_SURFACE. 
+----------------------------------Edges------------------------------------------------
+The <cup>(19) is INSIDE the <fridge>(14). 
+The <basket>(25) is ON the <livingroom floor>(5). 
+The <toy box>(45) is ON the <childroom floor>(3). 
+The <toy car>(46) is ON the <childroom floor>(3). 
+The <sunglasses>(55) is ON the <dining table>(13). 
+
+
+
+task_id: 17
+{'inside_<baby bottle>(36)_<fridge>(14)': [1, []]}
+['Put the <baby bottle>(36) into the <fridge>(14).']
+[14]
+*******************************Agent********************************************
+I am <quadrotor>(22). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET. Now my state is: LAND. 
+I am ON the <livingroom floor>(5). I am INSIDE the <livingroom>(4). I am WITH the <basket>(25). 
+The <basket>(25) is with quadrotor LAND ON the <livingroom floor>(5).
+I am <robot dog>(23). Now my properties are: MOVABLE. 
+I am ON the <kitchen floor>(7). I am INSIDE the <kitchen>(6). 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<cup>(19). Its properties are: GRABABLE, MOVABLE. Now its state is: EMPTY.
+<baby bottle>(36). Its properties are: GRABABLE, MOVABLE, ON_HIGH_SURFACE. 
+<dinner napkin>(41). Its properties are: GRABABLE, MOVABLE. 
+<toy box>(45). Its properties are: CONTAINERS. Now its state is: OPEN_FOREVER.
+<box>(52). Its properties are: CONTAINERS, MOVABLE, ON_HIGH_SURFACE. Now its state is: OPEN_FOREVER.
+----------------------------------Edges------------------------------------------------
+The <cup>(19) is INSIDE the <fridge>(14). 
+The <basket>(25) is ON the <livingroom floor>(5). 
+The <baby bottle>(36) is ON the <dining table>(13). 
+The <dinner napkin>(41) is ON the <childroom floor>(3). 
+The <toy box>(45) is ON the <childroom floor>(3). 
+The <box>(52) is ON the <high table>(33). 
+
+task_id: 18
+{'inside_<toy car>(46)_<toy box>(45)': [1, []], 'on_<dinner napkin>(41)_<dining table>(13)': [1, []]}
+['Put the <toy car>(46) into the <toy box>(45) and put the <dinner napkin>(41) on the <dining table>(13).']
+[14]
+*******************************Agent********************************************
+I am <quadrotor>(22). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET. Now my state is: LAND. 
+I am ON the <childroom floor>(3). I am INSIDE the <childroom>(2). I am WITH the <basket>(25). 
+The <basket>(25) is with quadrotor LAND ON the <childroom floor>(3).
+I am <robot dog>(23). Now my properties are: MOVABLE. 
+I am ON the <childroom floor>(3). I am INSIDE the <childroom>(2). 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<baby bottle>(36). Its properties are: GRABABLE, MOVABLE, ON_HIGH_SURFACE. 
+<dinner napkin>(41). Its properties are: GRABABLE, MOVABLE. 
+<vegetable peeler>(42). Its properties are: GRABABLE, MOVABLE, ON_HIGH_SURFACE. 
+<toy box>(45). Its properties are: CONTAINERS. Now its state is: OPEN_FOREVER.
+<toy car>(46). Its properties are: GRABABLE, MOVABLE. 
+----------------------------------Edges------------------------------------------------
+The <basket>(25) is ON the <childroom floor>(3). 
+The <baby bottle>(36) is ON the <dining table>(13). 
+The <dinner napkin>(41) is ON the <childroom floor>(3). 
+The <vegetable peeler>(42) is ON the <high kitchen table>(35). 
+The <toy box>(45) is ON the <childroom floor>(3). 
+The <toy car>(46) is ON the <childroom floor>(3). 
+
+task_id: 19
+{'on_<textbook>(44)_<high table>(33)': [1, []]}
+['Put the <textbook>(44) on the <high table>(33). ']
+[14]
+*******************************Agent********************************************
+I am <quadrotor>(22). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET. Now my state is: LAND. 
+I am ON the <childroom floor>(3). I am INSIDE the <childroom>(2). I am WITH the <basket>(25). 
+The <basket>(25) is with quadrotor LAND ON the <childroom floor>(3).
+I am <robot dog>(23). Now my properties are: MOVABLE. 
+I am ON the <childroom floor>(3). I am INSIDE the <childroom>(2). 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<apple>(17). Its properties are: GRABABLE, MOVABLE. 
+<banana>(18). Its properties are: GRABABLE, MOVABLE. 
+<textbook>(44). Its properties are: GRABABLE, MOVABLE. 
+<plate>(51). Its properties are: GRABABLE, MOVABLE, ON_HIGH_SURFACE, CONTAINERS. Now its state is: OPEN_FOREVER.
+<sunglasses>(55). Its properties are: GRABABLE, MOVABLE, ON_HIGH_SURFACE. 
+----------------------------------Edges------------------------------------------------
+The <apple>(17) is ON the <coffee table>(12). 
+The <banana>(18) is INSIDE the <fridge>(14). 
+The <basket>(25) is ON the <childroom floor>(3). 
+The <textbook>(44) is ON the <bed>(28). 
+The <plate>(51) is ON the <dining table>(13). 
+The <sunglasses>(55) is ON the <dining table>(13). 
+
+

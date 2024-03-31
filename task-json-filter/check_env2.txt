@@ -1,0 +1,337 @@
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Fix~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<grocery store>(0). 
+<grocery store floor>(1). Its properties are: SURFACES, LANDABLE, LOW_HEIGHT. 
+<display bin>(2). Its properties are: CONTAINERS, ON_HIGH_SURFACE. Now its state is: OPEN_FOREVER.
+<display bin>(3). Its properties are: CONTAINERS, ON_HIGH_SURFACE. Now its state is: OPEN_FOREVER.
+<display bin>(4). Its properties are: CONTAINERS, ON_HIGH_SURFACE. Now its state is: OPEN_FOREVER.
+<display table>(5). Its properties are: SURFACES, LANDABLE, HIGH_HEIGHT. 
+<pedestal table>(6). Its properties are: SURFACES, LOW_HEIGHT. 
+<pedestal table>(7). Its properties are: SURFACES, LOW_HEIGHT. 
+<checkout counter>(8). Its properties are: SURFACES, LANDABLE, HIGH_HEIGHT. 
+<robot arm>(18). Its properties are: ON_HIGH_SURFACE. 
+<robot arm>(19). Its properties are: ON_HIGH_SURFACE. 
+<robot dog>(20). Its properties are: MOVABLE. 
+<quadrotor>(21). Its properties are: MOVABLE, FLYABLE, HAVE_A_BASKET. Now its state is: LAND.
+<basket>(22). Its properties are: MOVABLE, CONTAINERS, WITH_QUADROTOR. Now its state is: OPEN_FOREVER.
+<trash can>(23). Its properties are: CONTAINERS. Now its state is: OPEN_FOREVER.
+<cash register>(24). Its properties are: CAN_OPEN, CONTAINERS, ON_HIGH_SURFACE. Now its state is: CLOSED.
+<carton>(26). Its properties are: CONTAINERS. Now its state is: OPEN_FOREVER.
+<grocery shelf>(29). Its properties are: SURFACES, LOW_HEIGHT. 
+<shopping basket>(30). Its properties are: CONTAINERS, ON_HIGH_SURFACE. Now its state is: OPEN_FOREVER.
+<trash can>(38). Its properties are: CONTAINERS. Now its state is: OPEN_FOREVER.
+<bucket>(41). Its properties are: CONTAINERS. Now its state is: OPEN_FOREVER.
+<display table>(42). Its properties are: SURFACES, LANDABLE, HIGH_HEIGHT. 
+The <grocery store floor>(1) is INSIDE the <grocery store>(0). 
+The <display bin>(2) is ON the <display table>(5). 
+The <display bin>(3) is ON the <display table>(5). 
+The <display bin>(4) is ON the <display table>(5). 
+The <display table>(5) is ON the <grocery store floor>(1). 
+The <pedestal table>(6) is ON the <grocery store floor>(1). 
+The <pedestal table>(7) is ON the <grocery store floor>(1). 
+The <checkout counter>(8) is ON the <grocery store floor>(1). 
+The <robot arm>(18) is ON the <display table>(5). 
+The <robot arm>(18) is INSIDE the <grocery store>(0). 
+The <robot arm>(19) is ON the <checkout counter>(8). 
+The <robot arm>(19) is INSIDE the <grocery store>(0). 
+The <robot dog>(20) is ON the <grocery store floor>(1). 
+The <robot dog>(20) is INSIDE the <grocery store>(0). 
+The <trash can>(23) is ON the <grocery store floor>(1). 
+The <cash register>(24) is ON the <checkout counter>(8). 
+The <carton>(26) is ON the <grocery store floor>(1). 
+The <grocery shelf>(29) is ON the <grocery store floor>(1). 
+The <shopping basket>(30) is ON the <checkout counter>(8). 
+The <trash can>(38) is ON the <grocery store floor>(1). 
+The <bucket>(41) is ON the <grocery store floor>(1). 
+The <display table>(42) is ON the <grocery store floor>(1). 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+task_id: 0
+{'on_<pack of bread>(27)_<grocery shelf>(29)': [1, []], 'on_<toilet tissue>(28)_<grocery shelf>(29)': [1, []]}
+['Put the <pack of bread>(27) and <toilet tissue>(28) on the <grocery shelf>(29).']
+[8]
+*******************************Agent********************************************
+I am <quadrotor>(21). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET. Now my state is: LAND. 
+I am ON the <grocery store floor>(1). I am INSIDE the <grocery store>(0). I am WITH the <basket>(22). 
+The <basket>(22) is with quadrotor LAND ON the <grocery store floor>(1).Its properties are: MOVABLE, CONTAINERS, WITH_QUADROTOR. Now its state is: OPEN_FOREVER.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<bottle of orange juice>(17). Its properties are: MOVABLE, GRABABLE. 
+<pack of bread>(27). Its properties are: MOVABLE, GRABABLE. 
+<toilet tissue>(28). Its properties are: MOVABLE, GRABABLE. 
+<wallet>(33). Its properties are: MOVABLE, GRABABLE. 
+<paper money>(34). Its properties are: MOVABLE, GRABABLE. 
+----------------------------------Edges------------------------------------------------
+The <bottle of orange juice>(17) is ON the <pedestal table>(6). 
+The <basket>(22) is ON the <grocery store floor>(1). 
+The <pack of bread>(27) is INSIDE the <carton>(26). 
+The <toilet tissue>(28) is INSIDE the <carton>(26). 
+The <wallet>(33) is ON the <grocery store floor>(1). 
+The <paper money>(34) is ON the <grocery store floor>(1). 
+
+task_id: 1
+{'on_<box of candy>(31)_<pedestal table>(6)': [1, []], 'on_<box of candy>(32)_<pedestal table>(7)': [1, []]}
+['Put the <box of candy>(31) on the <pedestal table>(6) and put the <box of candy>(32) on the <pedestal table>(7).']
+[8]
+*******************************Agent********************************************
+I am <quadrotor>(21). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET. Now my state is: LAND. 
+I am ON the <grocery store floor>(1). I am INSIDE the <grocery store>(0). I am WITH the <basket>(22). 
+The <basket>(22) is with quadrotor LAND ON the <grocery store floor>(1).Its properties are: MOVABLE, CONTAINERS, WITH_QUADROTOR. Now its state is: OPEN_FOREVER.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<apple>(10). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<box of candy>(31). Its properties are: MOVABLE, GRABABLE. 
+<box of candy>(32). Its properties are: MOVABLE, GRABABLE. 
+<paper money>(36). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<empty box>(39). Its properties are: MOVABLE, GRABABLE. 
+----------------------------------Edges------------------------------------------------
+The <apple>(10) is INSIDE the <display bin>(2). 
+The <basket>(22) is ON the <grocery store floor>(1). 
+The <box of candy>(31) is ON the <grocery shelf>(29). 
+The <box of candy>(32) is ON the <grocery shelf>(29). 
+The <paper money>(36) is ON the <checkout counter>(8). 
+The <empty box>(39) is ON the <pedestal table>(6). 
+
+task_id: 2
+{'on_<wallet>(33)_<pedestal table>(7)': [1, []], 'on_<paper money>(34)_<pedestal table>(7)': [1, []]}
+['Put the <wallet>(33) and <paper money>(34) on the <pedestal table>(7).']
+[8]
+*******************************Agent********************************************
+I am <quadrotor>(21). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET. Now my state is: LAND. 
+I am ON the <grocery store floor>(1). I am INSIDE the <grocery store>(0). I am WITH the <basket>(22). 
+The <basket>(22) is with quadrotor LAND ON the <grocery store floor>(1).Its properties are: MOVABLE, CONTAINERS, WITH_QUADROTOR. Now its state is: OPEN_FOREVER.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<apple>(10). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<carton of milk>(15). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<box of candy>(32). Its properties are: MOVABLE, GRABABLE. 
+<wallet>(33). Its properties are: MOVABLE, GRABABLE. 
+<paper money>(34). Its properties are: MOVABLE, GRABABLE. 
+----------------------------------Edges------------------------------------------------
+The <apple>(10) is INSIDE the <display bin>(2). 
+The <carton of milk>(15) is INSIDE the <display bin>(4). 
+The <basket>(22) is ON the <grocery store floor>(1). 
+The <box of candy>(32) is ON the <grocery shelf>(29). 
+The <wallet>(33) is ON the <grocery store floor>(1). 
+The <paper money>(34) is ON the <grocery store floor>(1). 
+
+
+task_id: 4
+{'inside_<biscuits>(45)_<basket>(22)': [1, []], 'inside_<biscuits>(46)_<basket>(22)': [1, []], 'on_<quadrotor>(21)_<checkout counter>(8)': [1, []]}
+['Put the <biscuits>(45) and <biscuits>(46) into the <basket>(22).']
+[4]
+*******************************Agent********************************************
+I am <quadrotor>(21). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET, ON_HIGH_SURFACE. Now my state is: LAND. 
+I am ON the <checkout counter>(8). I am INSIDE the <grocery store>(0). I am WITH the <basket>(22). 
+The <basket>(22) is with quadrotor LAND ON the <checkout counter>(8).Its properties are: MOVABLE, CONTAINERS, WITH_QUADROTOR, ON_HIGH_SURFACE. Now its state is: OPEN_FOREVER.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<lettuce>(13). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<carton of milk>(15). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<bottle of apple juice>(16). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<biscuits>(45). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<biscuits>(46). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+----------------------------------Edges------------------------------------------------
+The <lettuce>(13) is INSIDE the <display bin>(3). 
+The <carton of milk>(15) is INSIDE the <display bin>(4). 
+The <bottle of apple juice>(16) is INSIDE the <display bin>(4). 
+The <basket>(22) is ON the <checkout counter>(8). 
+The <biscuits>(45) is INSIDE the <shopping basket>(30). 
+The <biscuits>(46) is INSIDE the <shopping basket>(30). 
+
+
+
+
+task_id: 8
+{'inside_<bottle of orange juice>(17)_<basket>(22)': [1, []], 'inside_<paper money>(25)_<basket>(22)': [1, []], 'on_<quadrotor>(21)_<display table>(42)': [1, []]}
+['The <quadrotor>(21) lands on the <display table>(42) with the <bottle of orange juice>(17) and <paper money>(25) in the <basket>(22).']
+[11]
+*******************************Agent********************************************
+I am <quadrotor>(21). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET. Now my state is: LAND. 
+I am ON the <grocery store floor>(1). I am INSIDE the <grocery store>(0). I am WITH the <basket>(22). 
+The <basket>(22) is with quadrotor LAND ON the <grocery store floor>(1).Its properties are: MOVABLE, CONTAINERS, WITH_QUADROTOR. Now its state is: OPEN_FOREVER.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<apple>(9). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<bottle of orange juice>(17). Its properties are: MOVABLE, GRABABLE. 
+<paper money>(25). Its properties are: MOVABLE, GRABABLE. 
+<rag>(40). Its properties are: MOVABLE, GRABABLE. 
+<biscuits>(46). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+----------------------------------Edges------------------------------------------------
+The <apple>(9) is INSIDE the <display bin>(2). 
+The <bottle of orange juice>(17) is ON the <pedestal table>(6). 
+The <basket>(22) is ON the <grocery store floor>(1). 
+The <paper money>(25) is ON the <pedestal table>(7). 
+The <rag>(40) is ON the <pedestal table>(7). 
+The <biscuits>(46) is INSIDE the <shopping basket>(30). 
+
+task_id: 9
+{'on_<biscuits>(45)_<grocery shelf>(29)': [1, []], 'on_<bottle of apple juice>(16)_<grocery shelf>(29)': [1, []]}
+['Put the <biscuits>(45) and <bottle of apple juice>(16) on the <grocery shelf>(29).']
+[11]
+*******************************Agent********************************************
+I am <quadrotor>(21). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET, ON_HIGH_SURFACE. Now my state is: LAND. 
+I am ON the <display table>(5). I am INSIDE the <grocery store>(0). I am WITH the <basket>(22). 
+The <basket>(22) is with quadrotor LAND ON the <display table>(5).Its properties are: MOVABLE, CONTAINERS, WITH_QUADROTOR, ON_HIGH_SURFACE. Now its state is: OPEN_FOREVER.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<bottle of apple juice>(16). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<paper money>(25). Its properties are: MOVABLE, GRABABLE. 
+<paper money>(34). Its properties are: MOVABLE, GRABABLE. 
+<receipt>(37). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<biscuits>(45). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+----------------------------------Edges------------------------------------------------
+The <bottle of apple juice>(16) is INSIDE the <basket>(22). 
+The <basket>(22) is ON the <display table>(5). 
+The <paper money>(25) is ON the <pedestal table>(7). 
+The <paper money>(34) is ON the <grocery store floor>(1). 
+The <receipt>(37) is ON the <checkout counter>(8). 
+The <biscuits>(45) is INSIDE the <basket>(22). 
+
+
+
+task_id: 12
+{'inside_<banana>(11)_<shopping basket>(30)': [1, []], 'inside_<coin>(43)_<shopping basket>(30)': [1, []]}
+['Put the <banana>(11) and <coin>(43) inside the <shopping basket>(30).']
+[12]
+*******************************Agent********************************************
+I am <quadrotor>(21). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET. Now my state is: LAND. 
+I am ON the <grocery store floor>(1). I am INSIDE the <grocery store>(0). I am WITH the <basket>(22). 
+The <basket>(22) is with quadrotor LAND ON the <grocery store floor>(1).Its properties are: MOVABLE, CONTAINERS, WITH_QUADROTOR. Now its state is: OPEN_FOREVER.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<banana>(11). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<lettuce>(14). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<bottle of orange juice>(17). Its properties are: MOVABLE, GRABABLE. 
+<coin>(43). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<biscuits>(46). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+----------------------------------Edges------------------------------------------------
+The <banana>(11) is INSIDE the <display bin>(2). 
+The <lettuce>(14) is INSIDE the <display bin>(3). 
+The <bottle of orange juice>(17) is ON the <pedestal table>(6). 
+The <basket>(22) is ON the <grocery store floor>(1). 
+The <coin>(43) is ON the <checkout counter>(8). 
+The <biscuits>(46) is INSIDE the <shopping basket>(30). 
+
+task_id: 13
+{'inside_<box of candy>(31)_<shopping basket>(30)': [1, []], 'inside_<receipt>(37)_<display bin>(2)': [1, []]}
+['Put the <box of candy>(31) into the <shopping basket>(30) and put the <receipt>(37) into the <display bin>(2).']
+[16]
+*******************************Agent********************************************
+I am <quadrotor>(21). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET. Now my state is: LAND. 
+I am ON the <grocery store floor>(1). I am INSIDE the <grocery store>(0). I am WITH the <basket>(22). 
+The <basket>(22) is with quadrotor LAND ON the <grocery store floor>(1).Its properties are: MOVABLE, CONTAINERS, WITH_QUADROTOR. Now its state is: OPEN_FOREVER.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<apple>(10). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<carton of milk>(15). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<bottle of orange juice>(17). Its properties are: MOVABLE, GRABABLE. 
+<box of candy>(31). Its properties are: MOVABLE, GRABABLE. 
+<receipt>(37). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+----------------------------------Edges------------------------------------------------
+The <apple>(10) is INSIDE the <display bin>(2). 
+The <carton of milk>(15) is INSIDE the <display bin>(4). 
+The <bottle of orange juice>(17) is ON the <pedestal table>(6). 
+The <basket>(22) is ON the <grocery store floor>(1). 
+The <box of candy>(31) is ON the <grocery shelf>(29). 
+The <receipt>(37) is ON the <checkout counter>(8). 
+
+task_id: 14
+{'inside_<paper money>(25)_<shopping basket>(30)': [1, []]}
+['Put the <paper money>(25) into the <shopping basket>(30).']
+[12]
+*******************************Agent********************************************
+I am <quadrotor>(21). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET, ON_HIGH_SURFACE. Now my state is: LAND. 
+I am ON the <display table>(42). I am INSIDE the <grocery store>(0). I am WITH the <basket>(22). 
+The <basket>(22) is with quadrotor LAND ON the <display table>(42).Its properties are: MOVABLE, CONTAINERS, WITH_QUADROTOR, ON_HIGH_SURFACE. Now its state is: OPEN_FOREVER.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<paper money>(25). Its properties are: MOVABLE, GRABABLE. 
+<toilet tissue>(28). Its properties are: MOVABLE, GRABABLE. 
+<box of candy>(32). Its properties are: MOVABLE, GRABABLE. 
+<coin>(43). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<biscuits>(45). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+----------------------------------Edges------------------------------------------------
+The <basket>(22) is ON the <display table>(42). 
+The <paper money>(25) is ON the <pedestal table>(7). 
+The <toilet tissue>(28) is INSIDE the <carton>(26). 
+The <box of candy>(32) is ON the <grocery shelf>(29). 
+The <coin>(43) is ON the <checkout counter>(8). 
+The <biscuits>(45) is INSIDE the <shopping basket>(30). 
+
+task_id: 15
+{'on_<apple>(9)_<pedestal table>(6)': [1, []], 'on_<bottle of apple juice>(16)_<pedestal table>(7)': [1, []]}
+['Put the <apple>(9) on the <pedestal table>(6) and put the <bottle of apple juice>(16) on the <pedestal table>(7).']
+[15]
+*******************************Agent********************************************
+I am <quadrotor>(21). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET, ON_HIGH_SURFACE. Now my state is: LAND. 
+I am ON the <display table>(5). I am INSIDE the <grocery store>(0). I am WITH the <basket>(22). 
+The <basket>(22) is with quadrotor LAND ON the <display table>(5).Its properties are: MOVABLE, CONTAINERS, WITH_QUADROTOR, ON_HIGH_SURFACE. Now its state is: OPEN_FOREVER.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<apple>(9). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<lettuce>(13). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<bottle of apple juice>(16). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<box of candy>(32). Its properties are: MOVABLE, GRABABLE. 
+<paper money>(34). Its properties are: MOVABLE, GRABABLE. 
+----------------------------------Edges------------------------------------------------
+The <apple>(9) is INSIDE the <display bin>(2). 
+The <lettuce>(13) is INSIDE the <display bin>(3). 
+The <bottle of apple juice>(16) is INSIDE the <display bin>(4). 
+The <basket>(22) is ON the <display table>(5). 
+The <box of candy>(32) is ON the <grocery shelf>(29). 
+The <paper money>(34) is ON the <grocery store floor>(1). 
+
+
+
+task_id: 18
+{'on_<biscuits>(45)_<grocery shelf>(29)': [1, []], 'on_<biscuits>(46)_<grocery shelf>(29)': [1, []]}
+['Put the <biscuits>(45) and <biscuits>(46) on the <grocery shelf>(29).']
+[15]
+*******************************Agent********************************************
+I am <quadrotor>(21). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET, ON_HIGH_SURFACE. Now my state is: LAND. 
+I am ON the <checkout counter>(8). I am INSIDE the <grocery store>(0). I am WITH the <basket>(22). 
+The <basket>(22) is with quadrotor LAND ON the <checkout counter>(8).Its properties are: MOVABLE, CONTAINERS, WITH_QUADROTOR, ON_HIGH_SURFACE. Now its state is: OPEN_FOREVER.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<apple>(10). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<chocolate bar>(35). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<paper money>(36). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<biscuits>(45). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<biscuits>(46). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+----------------------------------Edges------------------------------------------------
+The <apple>(10) is INSIDE the <display bin>(2). 
+The <basket>(22) is ON the <checkout counter>(8). 
+The <chocolate bar>(35) is ON the <checkout counter>(8). 
+The <paper money>(36) is ON the <checkout counter>(8). 
+The <biscuits>(45) is INSIDE the <shopping basket>(30). 
+The <biscuits>(46) is INSIDE the <shopping basket>(30). 
+
+task_id: 19
+{'on_<bottle of apple juice>(16)_<grocery shelf>(29)': [1, []]}
+['Put the <bottle of apple juice>(16) on the <grocery shelf>(29).']
+[12]
+*******************************Agent********************************************
+I am <quadrotor>(21). Now my properties are: MOVABLE, FLYABLE, HAVE_A_BASKET. Now my state is: LAND. 
+I am ON the <grocery store floor>(1). I am INSIDE the <grocery store>(0). I am WITH the <basket>(22). 
+The <basket>(22) is with quadrotor LAND ON the <grocery store floor>(1).Its properties are: MOVABLE, CONTAINERS, WITH_QUADROTOR. Now its state is: OPEN_FOREVER.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~Nodes~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+<apple>(9). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<banana>(12). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<bottle of apple juice>(16). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<receipt>(37). Its properties are: MOVABLE, GRABABLE, ON_HIGH_SURFACE. 
+<apple>(44). Its properties are: MOVABLE, GRABABLE. 
+----------------------------------Edges------------------------------------------------
+The <apple>(9) is INSIDE the <display bin>(2). 
+The <banana>(12) is INSIDE the <display bin>(2). 
+The <bottle of apple juice>(16) is INSIDE the <display bin>(4). 
+The <basket>(22) is ON the <grocery store floor>(1). 
+The <receipt>(37) is ON the <checkout counter>(8). 
+The <apple>(44) is INSIDE the <carton>(26). 
+
