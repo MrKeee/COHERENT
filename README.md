@@ -1,6 +1,6 @@
 # COHERENT: Collaboration of Heterogeneous Multi-Robot System with Large Language Models
 
-### [Video](https://youtu.be/dV1J-VXdEJA)
+### [Paper](https://arxiv.org/abs/2409.15146) | [Video](https://youtu.be/dV1J-VXdEJA)
 
 > COHERENT: Collaboration of Heterogeneous Multi-Robot System with Large Language Models <br />
 > Author: Kehui Liu, Zixin Tang, Dong Wang, Zhigang Wang, Bin Zhao, Xuelong Li
@@ -15,3 +15,21 @@ Leveraging the powerful reasoning capabilities of large language models (LLMs), 
 
 ## Update
 The code and benchmark are coming soon.
+
+## Acknowledgement
+
+We adapt codes from some awesome repositories, including [llm-mcts](https://github.com/1989Ryan/llm-mcts), [Co-LLM-Agents](https://github.com/1989Ryan/llm-mcts), [OmniGibson](https://github.com/StanfordVL/OmniGibson)
+## Citation
+
+If you use this work or find it helpful, please consider citing: (bibtex)
+```
+@misc{liu2024coherentcollaborationheterogeneousmultirobot,
+      title={COHERENT: Collaboration of Heterogeneous Multi-Robot System with Large Language Models}, 
+      author={Kehui Liu and Zixin Tang and Dong Wang and Zhigang Wang and Bin Zhao and Xuelong Li},
+      year={2024},
+      eprint={2409.15146},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={https://arxiv.org/abs/2409.15146}, 
+}
+```
