@@ -1,0 +1,2 @@
+hademo
+-DCATKIN_DEVEL_PREFIX=/home/pjlab/workspace/OmniGibson/Benchmark/ros_hademo_ws/devel -DCMAKE_INSTALL_PREFIX=/home/pjlab/workspace/OmniGibson/Benchmark/ros_hademo_ws/install -G Unix Makefiles

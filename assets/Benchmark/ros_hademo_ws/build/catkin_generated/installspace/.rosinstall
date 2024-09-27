@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/pjlab/workspace/OmniGibson/Benchmark/ros_hademo_ws/install/setup.sh

@@ -1,0 +1,9 @@
+hademo/ResultInfo franka_0
+hademo/ResultInfo franka_1
+hademo/ResultInfo franka_2
+hademo/ResultInfo aliengo_0
+hademo/ResultInfo aliengo_1
+hademo/ResultInfo aliengo_2
+hademo/ResultInfo quadrotor_0
+hademo/ResultInfo quadrotor_1
+hademo/ResultInfo quadrotor_2

@@ -1,0 +1,14 @@
+The start time of this experiment: 2024-09-25 23:10:25
+Env_id: 1
+Task_id: 1
+Task_goal: {'on_<old clothes>(42)_<chair>(5)': [1, []]}
+Goal_instruction: Put the <old clothes>(42) on the <chair>(5).
+Ground_truth_step_num: [6]
+ ---------------------- Step: 1 ----------------------
+Historical action: []
+The start time of this experiment: 2024-09-25 23:11:13
+Env_id: 1
+Task_id: 1
+Task_goal: {'on_<old clothes>(42)_<chair>(5)': [1, []]}
+Goal_instruction: Put the <old clothes>(42) on the <chair>(5).
+Ground_truth_step_num: [6]
