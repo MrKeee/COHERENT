@@ -77,7 +77,7 @@ sh run.sh
 You can set the simulator's viewer camera's pose in `OmniGibson/Benchmark/sim.py`.
 
 ## Acknowledgement
-We adapt codes from some awesome repositories, including [llm-mcts](https://github.com/1989Ryan/llm-mcts), [Co-LLM-Agents](https://github.com/1989Ryan/llm-mcts), [OmniGibson](https://github.com/StanfordVL/OmniGibson).
+We adapt codes from some awesome repositories, including [llm-mcts](https://github.com/1989Ryan/llm-mcts), [Co-LLM-Agents](https://github.com/UMass-Embodied-AGI/CoELA), [OmniGibson](https://github.com/StanfordVL/OmniGibson).
 
 ## Citation
 
